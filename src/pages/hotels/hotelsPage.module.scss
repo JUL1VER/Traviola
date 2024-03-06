@@ -1,0 +1,90 @@
+.root {
+  padding: var(--header-height) 0;
+
+  .loader,
+  .noHotels {
+    padding: 100px;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--black-color);
+
+    @media (width < 1024px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  .loadingMore {
+    text-align: center;
+    margin-top: 40px;
+
+    p {
+      font-size: 32px;
+      line-height: 40px;
+
+      @media (width < 768px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .resultTitle {
+    padding: 100px var(--main-pagging) 0;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+
+    @media (width < 1024px) {
+      padding: 80px var(--main-pagging) 0;
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media (width < 768px) {
+      padding: 60px var(--main-pagging) 0;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+.goBack {
+  text-decoration: none;
+}
+
+.noHotels {
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: var(--blue-color);
+  }
+}
+
+.hotelsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+
+  margin-top: 80px;
+  padding: 0 var(--main-pagging);
+
+  @media (width < 1440px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (width < 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (width < 768px) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+  }
+
+  @media (width < 533px) {
+    grid-template-columns: 1fr;
+  }
+}

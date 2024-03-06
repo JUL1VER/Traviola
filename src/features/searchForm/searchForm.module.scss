@@ -1,0 +1,61 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 200px 200px 100px 200px;
+  gap: 12px;
+
+  padding: 250px 40px;
+  max-width: 1180px;
+  width: 100%;
+  margin-bottom: auto;
+
+  @media (width < 1024px) {
+    grid-template-columns: 1fr 120px 120px 80px 120px;
+  }
+
+  @media (width < 768px) {
+    padding: 180px 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 50px 50px;
+    grid-template-areas:
+      "city city"
+      "checkIn checkOut"
+      "guests guests"
+      "submit submit";
+  }
+}
+
+.city {
+  width: 100%;
+
+  @media (width < 768px) {
+    grid-area: city;
+  }
+}
+
+.checkIn {
+  @media (width < 768px) {
+    grid-area: checkIn;
+  }
+}
+
+.checkOut {
+  @media (width < 768px) {
+    grid-area: checkOut;
+  }
+}
+
+.guests {
+  width: 100%;
+
+  @media (width < 768px) {
+    grid-area: guests;
+  }
+}
+
+.submit {
+  width: 100%;
+
+  @media (width < 768px) {
+    grid-area: submit;
+  }
+}

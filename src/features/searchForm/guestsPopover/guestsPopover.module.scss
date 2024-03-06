@@ -1,0 +1,25 @@
+.root {
+  .guests {
+    color: var(--black-color-60);
+    border: 1px solid var(--black-color-20);
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      border: 1px solid var(--black-color);
+      color: var(--black-color-80);
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 200px;
+}
+
+.counter {
+  padding: 0 4px;
+}

@@ -1,0 +1,47 @@
+:root {
+  // COLORS
+  --white-color: rgba(255, 255, 255, 1);
+  --white-color-10: rgba(255, 255, 255, 0.1);
+  --white-color-20: rgba(255, 255, 255, 0.2);
+  --white-color-30: rgba(255, 255, 255, 0.3);
+  --white-color-40: rgba(255, 255, 255, 0.4);
+  --white-color-50: rgba(255, 255, 255, 0.5);
+  --white-color-60: rgba(255, 255, 255, 0.6);
+  --white-color-70: rgba(255, 255, 255, 0.7);
+  --white-color-80: rgba(255, 255, 255, 0.8);
+  --white-color-80: rgba(255, 255, 255, 0.9);
+  --black-color: rgba(0, 0, 0, 1);
+  --black-color-10: rgba(0, 0, 0, 0);
+  --black-color-20: rgba(0, 0, 0, 0.2);
+  --black-color-30: rgba(0, 0, 0, 0.3);
+  --black-color-40: rgba(0, 0, 0, 0.4);
+  --black-color-50: rgba(0, 0, 0, 0.5);
+  --black-color-60: rgba(0, 0, 0, 0.6);
+  --black-color-70: rgba(0, 0, 0, 0.7);
+  --black-color-80: rgba(0, 0, 0, 0.8);
+  --black-color-90: rgba(0, 0, 0, 0.9);
+
+  --blue-color: #1976d2;
+  --gold-color: #ffd700;
+
+  // Z-INDEX
+  --z-index-header: 100;
+  --z-index-2: 2;
+  --z-index-1: 1;
+  --z-index-0: 0;
+  --z-index-back: -1;
+
+  // HEIGHT
+  --header-height: 80px;
+
+  @media (width < 768px) {
+    --header-height: 60px;
+  }
+
+  // PADDING
+  --main-pagging: 40px;
+
+  @media (width < 768px) {
+    --main-pagging: 20px;
+  }
+}
