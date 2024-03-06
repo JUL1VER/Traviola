@@ -19,7 +19,7 @@ const Header = () => {
         </Link>
       </div>
       <Typography variant="h1" className={s.title}>
-        TRAVIOLA
+        TRAVIOLI
       </Typography>
     </div>
   );
